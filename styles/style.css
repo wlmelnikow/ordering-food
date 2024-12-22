@@ -1,0 +1,613 @@
+:root {
+    --primary-color: #396C03;
+    --secondary-color: #FF8B00;
+    --black-basic-color: #3F3F3F;
+    --paragraph-color: #676767;
+    --disable-button-color: #C7C7C7;
+    --low-highlited-color: #9F9F9F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    list-style-type: none;
+    line-height: 1;
+}
+
+html,
+body {
+    font-family: Poppins;
+    height: 100%;
+}
+
+.wrapper {
+    padding: 0 100px 0 100px;
+    min-height: 100%;
+}
+
+
+/* -------------------HEADER--- */
+.header-background {
+    width: 100%;
+    background-color: #f7fff7;
+}
+
+.left-leafe,
+.right-leafe {
+    position: absolute;
+    z-index: 1;
+}
+
+.left-leafe {
+    top: -8px;
+    scale: 87%;
+    left: -105px;
+}
+
+.right-leafe {
+    left: 1142px;
+    top: 80px;
+}
+
+@media (max-width: 1345px) {
+    .right-leafe {
+        overflow: hidden;
+    }
+}
+
+
+
+/* @media (max-width: 1000px) {
+    .header-background {
+        scale: 70%;
+    }
+} */
+
+.header {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 1px 0px var(--low-highlited-color);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+.food-time-logo {
+    margin-right: 4px;
+    width: 147px;
+    height: 50px;
+}
+
+/* ВОССТАНОВИТЬ------------------------- */
+
+/* @media (max-width: 1180px) {
+    .food-time-logo {
+        scale: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .food-time-logo {
+        scale: 70%;
+    }
+} */
+
+.header-menu {
+    margin-left: 372px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+/* Восстановить-------------------- */
+
+/* @media (max-width: 1350px) {
+    .header-menu {
+        margin-left: 278px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-menu {
+        margin-left: 228px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-menu {
+        margin-left: 216px;
+        scale: 90%;
+    }
+} */
+
+.header-menu>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    color: var(--black-basic-color);
+}
+
+@media (max-width: 1375px) {
+    .header-menu ul {
+        margin-left: -200px;
+        margin-right: 70px;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 934px) {
+    .header-menu ul {
+        margin-left: -340px;
+        margin-right: 4px;
+        gap: 20px;
+    }
+}
+
+
+/* Восстановить------------------ */
+
+/* @media (max-width: 1380px) {
+    .header-menu ul {
+        margin-left: 92px;
+        margin-right: 8px;
+        gap: 30px;
+        scale: 90%;
+    }    
+}
+
+@media (max-width: 1133px) {
+    .header-menu ul {
+        margin-left: -200px;
+        margin-right: 0px;
+        gap: 40px;
+        scale: 90%;
+    }    
+} */
+
+.header-menu>ul>li img {
+    width: 13.5px;
+    height: 8px;
+}
+
+.header-buttons {
+    margin-left: auto;
+    display: flex;
+    flex-shrink: 0;
+}
+
+/* Восстановить-------------------------- */
+
+@media (max-width: 1166px) {
+    .header-buttons {
+        scale: 90%;
+    }
+
+    .login-button {
+        width: 20px;
+        height: 20px;
+        border-radius: 34px;
+    }
+}
+
+/*
+@media (max-width: 1000px) {
+    .header-buttons {
+        scale: 90%;
+    }
+} */
+
+.header-buttons button {
+    margin-left: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header-buttons button img {
+    width: 20px;
+    height: 20px;
+}
+
+.login-button {
+    width: 154px;
+    height: 60px;
+    border-radius: 34px;
+}
+
+@media (max-width: 1166px) {
+    .login-button {
+        width: 60px;
+        height: 60px;
+        border-radius: 34px;
+    }
+}
+
+
+.cart-picture-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.cart-picture-btn>.cart-in-elipse {
+    padding: 15px 16px 15px 15px;
+    z-index: 2;
+}
+
+
+/* Восстановить----------------- */
+
+/* @media (max-width: 1000px) {
+    .login-button {
+
+        scale: 90%;
+    }
+
+    .cart-picture-btn {
+
+        scale: 90%;
+    }
+
+    .cart-picture-btn > .cart-in-elipse {
+        width: 15px;
+        height: 15px;
+    }
+} */
+
+
+
+
+/* ------------------ Main section --------- */
+.content {
+    z-index: 3;
+}
+
+/* @media (max-width: 1381px) {
+    .content {
+        scale: 70%;
+        margin-left: -40px;
+    }
+} */
+
+
+
+.content h1 {
+    font-family: Merienda;
+    color: var(--primary-color);
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 27px;
+}
+
+
+.content h4 {
+    margin-bottom: 27px;
+    color: #8c8c8c;
+}
+
+.orange-dot {
+    color: var(--secondary-color);
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* .picture {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+} */
+
+
+/* NEW form --------------------------------------- */
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 3px solid #d3d3d3;
+    border-radius: 26px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.search-icon-container {
+    background-color: #ffa500;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #b0b0b0;
+}
+
+.search-button {
+    position: absolute;
+    height: 100%;
+    width: 150px;
+    background-color: #3b7d3a;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-button-icon {
+    margin-right: 5px;
+}
+
+.search-input::placeholder {
+    color: #b0b0b0;
+}
+
+/* ------------------------NEW form end-------------------------- */
+
+
+.search-btn {
+    position: inherit;
+    width: 210px;
+    height: 48px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    z-index: 5;
+}
+
+/* .main-wrapper {
+    margin-right: -100px;
+} */
+
+/* Восстановить---------------------- */
+
+/* @media (max-width: 1380px) {
+    .picture {
+        scale: 70%;
+    }
+} */
+
+/* .main-wrapper > img {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+} */
+
+.main-background-pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.picture {
+    position: relative;
+    margin-top: -70px;
+    margin-left: -70px;
+    z-index: 1;
+    scale: 97%;
+}
+
+.mount-of-delivery {
+    position: relative;
+    display: flex;
+    width: 245px;
+    height: 118px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.mount-delivery-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(228, 228, 228, 0.5); */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(164deg, rgb(255 255 255 / 31%) 50%, rgb(231 231 231) 100%);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.mount-of-delivery>img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.mount-delivery-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+    gap: 10px;
+
+}
+
+.two-hundred-span {
+    font-size: xx-large;
+    font-weight: bold;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mount-delivery-content>h4 {
+    font-weight: 600;
+    color: var(--low-highlited-color);
+}
+
+
+/* Second section----------------------------- */
+
+.second-section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #fffaf1;
+    z-index: 3;
+    flex-shrink: 2;
+}
+
+.second-section-content {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; */
+    margin-top: 60px;
+}
+
+.left-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left-item h2 {
+    font-family: Merienda;
+    font-size: 50px;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.left-item p {
+    color: var(--black-basic-color);
+    font-family: Poppins;
+    line-height: 1.7;
+}
+
+.second-section-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    height: 55px;
+}
+
+.second-section-btn>img {
+    margin-left: 15px;
+}
+
+.right-items {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.city {
+    width: 100%;
+    height: auto;
+}
+
+.man {
+    position: absolute;
+    width: 100%;
+}
+
+
+.second-section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-item,
+.right-items {
+    flex: 1;
+    min-width: 300px;
+    /* Минимальная ширина для элементов */
+    box-sizing: border-box;
+    /* Включает padding и border в ширину элемента */
+}
+
+/* При уменьшении экрана до 768px элементы будут располагаться друг под другом */
+@media (max-width: 768px) {
+    .second-section-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-item,
+    .right-items {
+        width: 100%;
+        max-width: 100%;
+        /* Устанавливаем максимальную ширину для корректного отображения */
+    }
+
+    .left-item {
+        margin-bottom: 20px;
+        /* Добавляем отступ между элементами */
+    }
+}
+
+
+/* Third section */
+
+.third-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+}
+
+.fork-spoon, .easy-ordering, .fast-delivery {
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    margin: 10px;
+}
